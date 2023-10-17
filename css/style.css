@@ -6,10 +6,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 100vw auto;
+}
+/* header and footer */
+header, footer {
+    background-image: linear-gradient(to right, green, yellow)
+}
+/* Footer -> span */
 #copyTitle {
     color: darkgoldenrod;
     font-size: 2rem;
-}
-footer p {
-    background-image: linear-gradient(to right, green, yellow);
 }

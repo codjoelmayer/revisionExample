@@ -6,3 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+#copyTitle {
+    color: darkgoldenrod;
+    font-size: 2rem;
+}
+footer p {
+    background-image: linear-gradient(to right, green, yellow);
+}

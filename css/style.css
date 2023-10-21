@@ -19,11 +19,11 @@ header, footer {
     background: var(--alternative) var(--linearBg) no-repeat;
 }
 /* Display -> flex */
-:is(ul) {
+nav :is(ul) {
     display: flex;
 }
 /* navigation */
-ul {
+nav ul {
     flex-wrap: wrap;
 }
 ul li{
@@ -84,7 +84,17 @@ main {
     background-color: var(--alternative);
     color: var(--secondary);
 }
-
+/* Position */
+main li:nth-child(3){
+    text-decoration: line-through;
+} 
+/*
+The following code is intended to apply a rule to the second list of a.pos class without styling the second list. I have a solution for this. Please let me know if you are able to solve it. By the way, you know where to find me.
+*/
+main .pos:nth-child(2) {
+    color: var(--alternative);
+    text-decoration: line-through;
+}
 /* Media query */
 @media screen and (width < 500px) {
     #box {

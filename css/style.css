@@ -33,7 +33,17 @@ ul li{
 /* Links */
 a {
     color: var(--secondary);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+a:is(:active, :focus, :hover) {
     text-decoration: underline;
+    color: var(--primary);
+}
+a:visited {
+    color: #242323;
+    background-color: var(--secondary);
+    border: 2px solid;
 }
 /* Body */
 body {
@@ -54,6 +64,17 @@ body {
     filter: drop-shadow(.5vw .5vw .2vw rgb(115, 141, 76));
     background-image: var(--linearBg);
     margin-inline: auto;
+}
+/* Heading */
+:is(h1, h2, h3, h4, h5, h6){
+    text-shadow: 
+    .12vw .1vw 0 var(--primary), 
+    .21vw .21vw 0 var(--secondary), 
+    .31vw .3vw 0 var(--awesome);
+}
+:is(h1, h2, h3, h4, h5, h6)::first-letter {
+    color: var(--awesome);
+    font-size: xx-large;
 }
 #box :is(p) {
     background-color: var(--alternative);

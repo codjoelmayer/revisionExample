@@ -17,6 +17,7 @@
 /* header, footer */
 header, footer {
     background: var(--alternative) var(--linearBg) no-repeat;
+    padding-block: 1rem;
 }
 /* Display -> flex */
 nav :is(ul) {
@@ -33,6 +34,7 @@ ul li{
 /* Links */
 a {
     color: var(--secondary);
+    font-size: larger;
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -70,7 +72,8 @@ main {
     margin-inline: auto;
 }
 /* Heading */
-:is(h1, h2, h3, h4, h5, h6){
+:is(h1, h2, h3, h4, h5, h6, 
+footer span:first-child){
     text-shadow: 
     .12vw .1vw 0 var(--primary), 
     .21vw .21vw 0 var(--secondary), 
@@ -94,6 +97,11 @@ The following code is intended to apply a rule to the second list of a.pos class
 main .pos:nth-child(2) {
     color: var(--alternative);
     text-decoration: line-through;
+}
+/* Footer */
+footer p {
+    color: var(--secondary);
+    font-size: 1.5rem;
 }
 /* Media query */
 @media screen and (width < 500px) {

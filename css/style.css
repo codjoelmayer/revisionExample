@@ -53,6 +53,10 @@ body {
     display: grid;
     grid-template-rows: auto minmax(100%, 100vh) auto;
 }
+/* main */ 
+main {
+    padding-inline: 1rem;
+}
 /* Box Model */
 #box {
     width: 450px;

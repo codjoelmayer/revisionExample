@@ -20,7 +20,8 @@ header, footer {
     padding-block: 1rem;
 }
 /* Display -> flex */
-nav :is(ul) {
+nav :is(ul),
+:is(.container) {
     display: flex;
 }
 /* navigation */
@@ -98,6 +99,17 @@ main .pos:nth-child(2) {
     color: var(--alternative);
     text-decoration: line-through;
 }
+/* Flex box */
+.container {
+    margin-block: .5rem;
+    gap: .5rem;
+}
+.container :is(img) {
+    width: 18rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
 /* Footer */
 footer p {
     color: var(--secondary);
@@ -108,4 +120,19 @@ footer p {
     #box {
         width: 100%;
     } 
+    .container {
+        /* flex-direction: row; */
+        flex-flow: row wrap;
+        /*
+        I prefer flex-flow over flex-direction. because I can set the flex direction and flex wrap within one property.
+        */
+    }
+    .container :is(img) {
+        width: 100%;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }
